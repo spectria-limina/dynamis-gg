@@ -137,7 +137,7 @@ name = "Floating Fetters"
 id = 2304
 icon = 15301
 description = "Bound in midair and unable to move."
-explanation = "Can't move or take actions."
+explanation = "You can still take actions."
 phases = [1]
 
 [deep-freeze]
