@@ -27,6 +27,7 @@ name = "Lightsteeped"
 id = 2257
 icon = 17091
 description = "Overflowing with astral energy. Upon accumulating 5 stacks, you will deal unaspected damage to those nearby."
+explanation = "Wipes the party at 5 stacks."
 phases = [2, 4]
 
 [siw-water]
@@ -112,7 +113,7 @@ name = "Prey"
 id = 1051
 icon = 15026
 description = "Marked as prey."
-explanation = "Indicates you will be the target of a mechanic."
+explanation = "You are tethered and will be hit by a mechanic from the tethered boss/clone."
 phases = [1]
 
 [bleeding]
@@ -128,7 +129,7 @@ name = "Powder Mark Trail"
 id = 4166
 icon = 214234
 description = "Emblazoned with a gunpowder mark that will cause you and the nearest ally to explode when this effect expires."
-# explanation = ""
+explanation = "Both players are hit by large AoE tankbusters."
 phases = [1]
 
 [fetters]
@@ -136,7 +137,7 @@ name = "Floating Fetters"
 id = 2304
 icon = 15301
 description = "Bound in midair and unable to move."
-# explanation = ""
+explanation = "Can't move or take actions."
 phases = [1]
 
 [deep-freeze]
@@ -144,7 +145,7 @@ name = "Deep Freeze"
 id = 1150
 icon = 15637
 description = "Your body is encased in ice, preventing action and dealing damage over time."
-# explanation = ""
+explanation = "Unable to move or take actions."
 phases = [2]
 
 [fated-burn]
@@ -152,7 +153,7 @@ name = "Fated Burn Mark"
 id = 4165
 icon = 214233
 description = "Emblazoned with a fateful burn mark that will cause you to explode with a vengeance when you are KO'd."
-# explanation = ""
+explanation = "If you die before the debuff falls off, it's a wipe."
 phases = [1]
 
 [pvuln]
