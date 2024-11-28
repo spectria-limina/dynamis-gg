@@ -1,0 +1,23 @@
+{% set dir = page.relative_path | split(pat="/") | slice(end=-1) | join(sep="/") %}
+{% set datapath = datapath | default(value=dir~"/buffs.toml") %}
+{% set data = load_data(path=datapath) %}
+
+{% set filtered = [] %}
+{% for key, buff in data %}
+    {% set phases = buff.phases | default(value=[]) %}
+    {% set numphases = phases | length %}
+    {% if not phase or phases is containing(phase) or (phase == "all" and numphases == 0) %}
+        {% set_global filtered = filtered | concat(with=[buff]) %}
+    {% endif %}
+{% endfor %}
+
+<table class="buff-table">
+{% for buff in filtered | sort(attribute="name") %}
+    <tr>
+        <td class="buff-icon"><img src="https://garlandtools.org/files/icons/status/{{buff.icon|default(value="")}}.png" style="width: 1.8em"/></td> 
+        <td class="buff-name">{{buff.name}}</td>
+        <td class="buff-description">{{buff.description | default(value="")}}</td>
+        <td class="buff-explanation">{{buff.explanation | default(value="")}}</td>
+    </tr>
+{% endfor %}
+</table>

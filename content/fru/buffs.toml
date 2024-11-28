@@ -1,0 +1,220 @@
+[siw-return]
+name = "Spell-in-Waiting: Return"
+id = 2464
+icon = 215313
+description = "Designated target of Return, which will activate when this effect expires."
+explanation = "When this expires, your position will be snapshotted and a blue marker appears to indicate where it was snapshot. When the Return buff expires, you will be returned to the snapshotted position."
+phases = [3, 4]
+
+[return]
+name = "Return"
+id = 2452
+icon = 15304
+description = "Aetherially entwined with the temporal manifold. You will be stunned and drawn back to your aetherial trace when this effect expires."
+explanation = "When this expires, you will be returned to the snapshotted position and stunned for a few seconds."
+phases = [3, 4]
+
+[weight-of-light]
+name = "The Weight of Light"
+id = 4159
+icon = 214229
+description = "Will unleash Powerful Light when this effect expires."
+explanation = "A gold orb appears above your head. Powerful Light is light party stack AoE that inflicts one stack of Lightsteeped on anyone hit."
+phases = [2]
+
+[lightsteeped]
+name = "Lightsteeped"
+id = 2257
+icon = 17091
+description = "Overflowing with astral energy. Upon accumulating 5 stacks, you will deal unaspected damage to those nearby."
+phases = [2, 4]
+
+[siw-water]
+name = "Spell-in-Waiting: Dark Water III"
+id = 2461
+icon = 15306
+description = "Designated target of Dark Water III, which will activate when this effect expires."
+explanation = "Dark Water III is a light party stack AoE."
+phases = [3, 4]
+
+[siw-dark]
+name = "Spell-in-Waiting: Dark Eruption"
+id = 2460
+icon = 15305
+description = "Designated target of Dark Eruption, which will activate when this effect expires."
+explanation = "Dark Eruption is a circle AoE."
+phases = [3, 4]
+
+[siw-fire]
+name = "Spell-in-Waiting: Dark Fire III"
+id = 2455
+icon = 15984
+description = "Designated target of Dark Fire III, which will activate when this effect expires."
+explanation = "Dark Fire III is a large circle AoE."
+phases = [3]
+
+[siw-ice]
+name = "Spell-in-Waiting: Dark Blizzard III"
+id = 2462
+icon = 15307
+description = "Designated target of Dark Blizzard III, which will activate when this effect expires."
+explanation = "Dark Blizzard III is a donut AoE."
+phases = [3, 4]
+
+[siw-wind]
+name = "Spell-in-Waiting: Dark Aero III"
+id = 2463
+icon = 15308
+description = "Designated target of Dark Aero III, which will activate when this effect expires."
+explanation = "Dark Aero III is a large circle AoE. Any other player hit by the AoE is knocked back a long way."
+phases = [4]
+
+[siw-gaze]
+name = "Spell-in-Waiting: Shadoweye"
+id = 2456
+icon = 15986
+description = "Designated target of Shadoweye, which will activate when this effect expires."
+explanation = "Shadoweye causes any player looking at you to die."
+phases = [3]
+
+[siw-unholy]
+name = "Spell-in-Waiting: Unholy Darkness"
+id = 2454
+icon = 15983
+description = "Designated target of Unholy Darkness, which will activate when this effect expires."
+explanation = "Unholy Darkness is a stack that requires 5+ players."
+phases = [3, 4]
+
+[mvuln]
+name = "Magic Vulnerability Up"
+id = 2941
+icon = 15057
+description = "Magic damage taken is increased."
+explanation = "If you are hit by magic damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
+
+[fvuln]
+name = "Fire Resistance Down II"
+id = 4393
+icon = 215595
+description = "Fire resistance is significantly reduced."
+explanation = "If you are hit by fire damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
+phases = [3]
+
+[ddown]
+name = "Damage Down"
+id = 2911
+icon = 15520
+description = "Damage dealt is reduced."
+explanation = "This is a 90% damage reduction."
+
+[prey]
+name = "Prey"
+id = 1051
+icon = 15026
+description = "Marked as prey."
+explanation = "Indicates you will be the target of a mechanic."
+phases = [1]
+
+[bleeding]
+name = "Bleeding"
+id = 2951
+icon = 15530
+description = "Sustaining damage over time."
+explanation = "This is a very strong bleed from the raidwide."
+phases = [1]
+
+[powder-mark]
+name = "Powder Mark Trail"
+id = 4166
+icon = 214234
+description = "Emblazoned with a gunpowder mark that will cause you and the nearest ally to explode when this effect expires."
+# explanation = ""
+phases = [1]
+
+[fetters]
+name = "Floating Fetters"
+id = 2304
+icon = 15301
+description = "Bound in midair and unable to move."
+# explanation = ""
+phases = [1]
+
+[deep-freeze]
+name = "Deep Freeze"
+id = 1150
+icon = 15637
+description = "Your body is encased in ice, preventing action and dealing damage over time."
+# explanation = ""
+phases = [2]
+
+[fated-burn]
+name = "Fated Burn Mark"
+id = 4165
+icon = 214233
+description = "Emblazoned with a fateful burn mark that will cause you to explode with a vengeance when you are KO'd."
+# explanation = ""
+phases = [1]
+
+[pvuln]
+name = "Physical Vulnerability Up"
+id = 2940
+icon = 15053
+description = "Physical damage taken is increased."
+explanation = "If you are hit by physical damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
+phases = [1, 4]
+
+[pvuln2]
+name = "Physical Vulnerability Up"
+id = 4162
+icon = 215053
+description = "Physical damage taken is increased."
+explanation = "If you are hit by physical damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
+phases = [2]
+
+[thin-ice]
+name = "Thin Ice"
+id = 911
+icon = 15615
+description = "Having trouble maintaining a solid foothold upon ice-covered ground."
+explanation = "Slip 'n' slide."
+phases = [2]
+
+[refulgent-chain]
+name = "Refulgent Chain"
+id = 2253
+icon = 15239
+description = "Bound with chains of light. Your Refulgent Fate will be sealed when this effect expires."
+explanation = "You are tethered to two other players, but have no restrictions yet."
+phases = [4]
+
+[refulgent-fate]
+name = "Refulgent Fate"
+id = 2255
+icon = 15240
+description = "Cursed by binding light. If the distance between you and the player to whom you are bound becomes too great or too small, you will deal unaspected damage to those nearby."
+explanation = "You are tethered to two other players. You must stay at roughly the distance between the two towers."
+phases = [4]
+
+[chains-light]
+name = "Chains of Everlasting Light"
+id = 4157
+icon = 214227
+description = "Bound with chains of everlasting light. Will be subject to a Curse of Everlasting Light when this effect expires."
+explanation = "You are tethered to two other players, but have no restrictions yet."
+phases = [2]
+
+[curse-light]
+name = "Curse of Everlasting Light"
+id = 4158
+icon = 214228
+description = "Cursed by everlasting light. Close proximity to the player to whom you are bound will result in unaspected damage to those nearby."
+explanation = "You are tethered to two other players."
+phases = [2]
+
+[stun]
+name = "Stun"
+id = 4163
+icon = 215004
+description = "Unable to execute actions."
+explanation = "Can't move or take actions."
+phases = [3, 4]

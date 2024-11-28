@@ -1,0 +1,60 @@
+/******************************************************************************
+ *   Extra - Put your extra SASS/CSS here, it will get bundled with abridge.css
+ *****************************************************************************/
+
+.buff {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: text-top;
+    padding: 0 0.05em;
+}
+
+.buff img {
+    display: inline-block;
+    height: 1lh;
+    align-self: center;
+}
+
+.buff-name {
+    font-weight: bold;
+}
+
+.tooltip .buff-name {
+    text-align: center;
+}
+
+.buff-duration {
+    padding-right: 0.3em;
+    font-size: 0.85em;
+}
+
+.buff-duration:last-child {
+    padding-right: 0;
+}
+
+.tooltip {
+    max-width: 9cm;
+    padding: .3rem .5rem .3rem .5rem;
+    border-top: 2px solid var(--a1);
+}
+
+.tooltip hr {
+    margin: 0.3em -0.25em;
+}
+
+.buff-explanation {
+    font-size: 0.85em;
+}
+
+.buff-description {
+    font-size: 0.75em;
+    font-style: italic;
+    margin: 0 0.2em;
+    text-align: center;
+}
+
+table.buff-table {
+    margin: 0 2.5%;
+    gap: 20em;
+    display: table;
+}

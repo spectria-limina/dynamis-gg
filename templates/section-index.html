@@ -1,0 +1,27 @@
+{#
+This Template Shows a paginated page of the subsections of a section with a short summary.
+This Template can also be used directly for the index eg: example.com/ or as the rendering template for Sections, eg: example.com/blog/  example.com/software/
+#}
+
+{%- extends "abridge/templates/index.html" %}
+{%- block content %}
+    <div>
+    {%- for sub in section.subsections %}
+      {% set sub = get_section(path=sub) %}
+      <article>
+        {{- macros::title_index(page=sub, config=config) }}
+        <div class="sum">
+        <p>
+        {%- if sub.description %}
+          {{ sub.description | safe }}
+        {%- elif sub.content %}
+          {{ sub.content | striptags | truncate(length=150) | safe }}
+        {%- elif sub.extra.static_thumbnail %}
+          {% set thumb = resize_image(path=sub.extra.static_thumbnail, width=400, op="fit_width") %}
+          <a href={{sub.permalink}}><img src={{thumb.url}} alt="" /></a>
+        {%- endif %}
+        </div>
+      </article>
+    {%- endfor %}
+    </div>
+{%- endblock content %}
