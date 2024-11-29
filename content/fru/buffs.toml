@@ -164,12 +164,12 @@ description = "Physical damage taken is increased."
 explanation = "If you are hit by physical damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
 phases = [1, 4]
 
-[pvuln2]
+[pvuln-esuna]
 name = "Physical Vulnerability Up"
 id = 4162
 icon = 215053
 description = "Physical damage taken is increased."
-explanation = "If you are hit by physical damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
+explanation = "If you are hit by physical damage, it will be lethal. This vuln, unlike in other phases, can be cleansed with Esuna or Warden's Paean."
 phases = [2]
 
 [thin-ice]
@@ -266,3 +266,19 @@ icon = 15503
 description = "Certain death when counter reaches zero."
 explanation = "Penalty for failing Shadoweye."
 phases = [3]
+
+[lvuln]
+name = "Light Resistance Down II"
+id = 4164
+icon = 214232
+description = "Light resistance is significantly reduced."
+explanation = "Light damage is lethal."
+phases = [5]
+
+[dvuln]
+name = "Dark Resistance Down II"
+id = 3323
+icon = 15485
+description = "Dark resistance is significantly reduced."
+explanation = "Dark damage is lethal."
+phases = [5]
