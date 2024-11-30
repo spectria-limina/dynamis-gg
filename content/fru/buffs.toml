@@ -129,7 +129,7 @@ name = "Powder Mark Trail"
 id = 4166
 icon = 214234
 description = "Emblazoned with a gunpowder mark that will cause you and the nearest ally to explode when this effect expires."
-explanation = "Both players are hit by large AoE tankbusters."
+explanation = "Both players are hit by large AoE tankbusters. The explosions will go off immediately if the bearer dies."
 phases = [1]
 
 [fetters]
