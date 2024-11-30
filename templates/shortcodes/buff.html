@@ -1,6 +1,7 @@
 {% set dir = page.relative_path | split(pat="/") | slice(end=-1) | join(sep="/") %}
 {% set datapath = datapath | default(value=dir~"/buffs.toml") %}
 {% set data = load_data(path=datapath) %}
+{% set buff = b | default(value=buff) %}
 {% set buff = data[buff] %}
 {% set description = description | default(value=buff.description) %}
 {% set explanation = explanation | default(value=buff.explanation) %}
@@ -19,10 +20,12 @@
         <div class='buff-explanation'> {{explanation | safe}} </div>
     {% endif %}
   ">
-    <img src="https://garlandtools.org/files/icons/status/{{buff.icon}}.png" />
-    {% if duration %}
-        <span class="buff-duration">{{duration}}</span>
-    {% endif %}
+    <span class="buff-icon">
+        <img src="https://garlandtools.org/files/icons/status/{{buff.icon}}.png" loading="lazy" />
+        {% if duration or dur %}
+            <span class="buff-duration">{{dur | default(value=duration)}}</span>
+        {% endif %}
+    </span>
     {% if not short %}
         <span class="buff-name">{{buff.name}}</span>
     {% endif %}

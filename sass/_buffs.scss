@@ -1,0 +1,62 @@
+.buff {
+    display: inline-flex;
+    align-items: baseline;
+    vertical-align: baseline;
+    padding: 0 0.05em;
+}
+
+.buff img {
+    display: inline-block;
+    height: 0.9lh;
+    margin-top: -100%;
+}
+
+span.buff-icon {
+    display: inline-flex;
+    position: relative;
+}
+
+td.buff-icon img {
+    min-width: 0.3cm;
+    width: 1.8em;
+}
+
+.buff-duration {
+    position: absolute;
+    font-size: 0.85em;
+    left: 0;
+    right: 0;
+    margin: 0 -100%;
+    bottom: -1.4ex;
+    text-align: center;
+    text-shadow: 1px 1px var(--c2), 1px -1px var(--c2), -1px -1px var(--c2), -1px 1px var(--c2);
+}
+
+.buff .buff-name {
+    padding-left: 0.1em;
+}
+
+.buff-name {
+    font-weight: bold;
+}
+
+.tooltip .buff-name {
+    text-align: center;
+}
+
+.buff-explanation {
+    font-size: 0.85em;
+}
+
+.buff-description {
+    font-size: 0.75em;
+    font-style: italic;
+    margin: 0 0.2em;
+    text-align: center;
+}
+
+table.buff-table {
+    margin: 0 2.5%;
+    gap: 20em;
+    display: table;
+}
