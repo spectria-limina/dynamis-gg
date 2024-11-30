@@ -111,7 +111,7 @@ foothr = false   # show or hide horizontal rule above footer
 
 ### $CURRENT_YEAR and $SITE_TITLE can be used anywhere within the copyright, you can change their position or you can also delete them and type whatever you want instead.
 #copyright = false # set to false to disable the copyright.
-copyright_override = '© $CURRENT_YEAR Tvnariea Reksane'
+copyright_override = '© $CURRENT_YEAR Tvnariea Reksane<br>Final Fantasy XIV assets are © Square Enix and used under license'
 #copyright_override = '© $CURRENT_YEAR $SITE_TITLE • Website content is licensed <a rel="noopener" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.'
 
 
