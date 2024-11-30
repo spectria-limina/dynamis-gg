@@ -18,11 +18,9 @@ mark {
 
 .unconfirmed::before {
     content: 'Unconfirmed: ';
-    text-decoration: none;
 }
 
 .unconfirmed {
-    text-decoration: underline wavy 1px var(--h2);
     font-style: italic;
 }
 
