@@ -9,16 +9,43 @@
     display: inline-block;
     height: 0.9lh;
     margin-top: -100%;
+    padding-top: 1mm;
+}
+
+$cleanse-color: rgb(116, 240, 240);
+
+.buff-cleansable {
+    display: inline !important;
+    height: 0.3mm;
+    width: 78%;
+    background-color: $cleanse-color;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 1px 1px 1px $cleanse-color,
+        1px -1px 1px $cleanse-color,
+        -1px -1px 1px $cleanse-color,
+        -1px 1px 1px $cleanse-color;
+}
+
+.buff-icon {
+    position: relative;
+    flex-direction: column;
 }
 
 span.buff-icon {
     display: inline-flex;
-    position: relative;
 }
 
-td.buff-icon img {
-    min-width: 0.3cm;
-    width: 1.8em;
+div.buff-icon {
+    display: flex;
+}
+
+.buff-table td>.buff-icon img {
+    min-width: 3mm;
+    max-width: 6mm;
 }
 
 .buff-duration {
@@ -27,7 +54,7 @@ td.buff-icon img {
     left: 0;
     right: 0;
     margin: 0 -100%;
-    bottom: -1.4ex;
+    bottom: -0.7ex;
     text-align: center;
     text-shadow: 1px 1px var(--c2), 1px -1px var(--c2), -1px -1px var(--c2), -1px 1px var(--c2);
 }

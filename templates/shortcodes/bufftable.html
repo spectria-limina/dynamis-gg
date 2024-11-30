@@ -14,7 +14,14 @@
 <table class="buff-table">
 {% for buff in filtered | sort(attribute="name") %}
     <tr>
-        <td class="buff-icon"><img src="https://garlandtools.org/files/icons/status/{{buff.icon|default(value="")}}.png" loading="lazy" /></td> 
+        <td>
+            <div class="buff-icon">
+                {% if buff.cleansable %}
+                    <span class="buff-cleansable"></span>
+                {% endif %}
+                <img src="https://garlandtools.org/files/icons/status/{{buff.icon|default(value="")}}.png" loading="lazy" />
+            </div>
+        </td> 
         <td class="buff-name">{{buff.name}}</td>
         <td class="buff-description">{{buff.description | default(value="")}}</td>
         <td class="buff-explanation">{{buff.explanation | default(value="")}}</td>

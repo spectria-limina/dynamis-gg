@@ -170,6 +170,7 @@ explanation = "Physical damage is lethal."
 name = "Physical Vulnerability Up"
 id = 4162
 icon = 215053
+cleansable = true
 description = "Physical damage taken is increased."
 explanation = "Physical damage is lethal. Unlike in other phases, this can be cleansed with Esuna or Warden's Paean."
 phases = [2]

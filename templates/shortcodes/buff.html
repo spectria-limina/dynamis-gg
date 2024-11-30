@@ -22,6 +22,9 @@
             <div class='buff-explanation'> {{explanation | safe}} </div>
         {% endif %}
     ">
+        {% if buff.cleansable %}
+            <span class="buff-cleansable"></span>
+        {% endif %}
         <img src="https://garlandtools.org/files/icons/status/{{buff.icon}}.png" loading="lazy" />
         {% if duration or dur %}
             <span class="buff-duration">{{dur | default(value=duration)}}</span>
