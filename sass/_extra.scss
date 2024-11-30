@@ -31,6 +31,9 @@ mark {
     max-width: 9cm;
     padding: .3rem .5rem .3rem .5rem;
     border-top: 2px solid var(--a1);
+    border-bottom: 1px solid var(--c4);
+    border-left: 1px solid var(--c4);
+    border-right: 1px solid var(--c4);
 }
 
 .tooltip hr {

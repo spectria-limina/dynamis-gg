@@ -5,22 +5,23 @@
 {% set buff = data[buff] %}
 {% set description = description | default(value=buff.description) %}
 {% set explanation = explanation | default(value=buff.explanation) %}
-<span class="buff" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
-  data-bs-title="
-    {% if short %}
-        <div class='buff-name'> {{buff.name}} </div>
-    {% endif %}
-    {% if description %}
-        <div class='buff-description'> {{buff.description | safe}} </div>
-        {% if explanation %}
-            <hr>
+<span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+        {% if short %}
+            <div class='buff-name'> {{buff.name}} </div>
         {% endif %}
-    {% endif %}
-    {% if explanation %}
-        <div class='buff-explanation'> {{explanation | safe}} </div>
-    {% endif %}
-  ">
-    <span class="buff-icon">
+        {% if description %}
+            <div class='buff-description'> {{buff.description | safe}} </div>
+            {% if explanation %}
+                <hr>
+            {% endif %}
+        {% endif %}
+        {% if explanation %}
+            <div class='buff-explanation'> {{explanation | safe}} </div>
+        {% endif %}
+    ">
         <img src="https://garlandtools.org/files/icons/status/{{buff.icon}}.png" loading="lazy" />
         {% if duration or dur %}
             <span class="buff-duration">{{dur | default(value=duration)}}</span>
