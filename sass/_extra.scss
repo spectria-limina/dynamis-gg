@@ -17,7 +17,10 @@ mark {
 }
 
 .unconfirmed::before {
-    content: 'Unconfirmed: ';
+    content: 'Unconfirmed:';
+    color: var(--c4);
+    text-decoration: underline 1px;
+    padding-right: 0.5ch;
 }
 
 .unconfirmed {
