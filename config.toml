@@ -5,7 +5,7 @@ base_url = "https://dynamis.gg"
 # If you use the npm/node script then all you have to do is set offline = true, and everything else is automatic.
 
 title = "Dynamis.gg"
-description = "Dynamis.gg is a site with some Final Fantasy XIV raiding resources." #for SEO aim for 140-180 Characters
+description = "A site with some Final Fantasy XIV raiding resources, including mechanical guides." #for SEO aim for 140-180 Characters
 theme = "abridge"
 
 default_language = "en"
