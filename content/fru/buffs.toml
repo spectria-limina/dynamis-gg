@@ -3,7 +3,10 @@ name = "Spell-in-Waiting: Return"
 id = 2464
 icon = 215313
 description = "Designated target of Return, which will activate when this effect expires."
-explanation = "When this expires, your position will be snapshotted and a blue marker appears to indicate where it was snapshot. When the Return buff expires, you will be returned to the snapshotted position."
+explanation = """
+When this expires, your position will be snapshotted and a blue marker appears to indicate where it was snapshot.
+When the Return buff expires, you will be returned to the snapshotted position.
+"""
 phases = [3, 4]
 
 [return]
@@ -91,14 +94,14 @@ name = "Magic Vulnerability Up"
 id = 2941
 icon = 15057
 description = "Magic damage taken is increased."
-explanation = "If you are hit by magic damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
+explanation = "Magic damage is lethal."
 
 [fvuln]
 name = "Fire Resistance Down II"
 id = 4393
 icon = 215595
 description = "Fire resistance is significantly reduced."
-explanation = "If you are hit by fire damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
+explanation = "Fire damage is lethal."
 phases = [3]
 
 [ddown]
@@ -116,7 +119,7 @@ description = "Marked as prey."
 explanation = "You are tethered and will be hit by a mechanic from the tethered boss/clone."
 phases = [1]
 
-[bleeding]
+[bleed]
 name = "Bleeding"
 id = 2951
 icon = 15530
@@ -153,7 +156,7 @@ name = "Fated Burn Mark"
 id = 4165
 icon = 214233
 description = "Emblazoned with a fateful burn mark that will cause you to explode with a vengeance when you are KO'd."
-explanation = "If you die before the debuff falls off, it's a wipe."
+explanation = "If you die before the debuff falls off, it's a heavy raidwide with a Damge Down, but not an automatic wipe."
 phases = [1]
 
 [pvuln]
@@ -161,15 +164,14 @@ name = "Physical Vulnerability Up"
 id = 2940
 icon = 15053
 description = "Physical damage taken is increased."
-explanation = "If you are hit by physical damage, it will be lethal. This debuff means there is some mechanic where you cannot be hit multiple times."
-phases = [1, 4]
+explanation = "Physical damage is lethal."
 
 [pvuln-esuna]
 name = "Physical Vulnerability Up"
 id = 4162
 icon = 215053
 description = "Physical damage taken is increased."
-explanation = "If you are hit by physical damage, it will be lethal. This vuln, unlike in other phases, can be cleansed with Esuna or Warden's Paean."
+explanation = "Physical damage is lethal. Unlike in other phases, this can be cleansed with Esuna or Warden's Paean."
 phases = [2]
 
 [thin-ice]
@@ -252,19 +254,22 @@ description = "Subject to the Oracle of Darkness's design. Damage taken from cer
 explanation = "Damage from the Usurper of Frost is lethal."
 phases = [4]
 
-[mort-mark]
+[mom]
 name = "Mark of Mortality"
 id = 4372
 icon = 219421
 description = "Branded with a mark of mortality. Damage dealt is reduced. Too many stacks will result in KO."
-explanation = "Penalty for failing various mechanics."
+explanation = """
+This is a 90% damage down, which stacks with a regular Damage Down to produce a 99% damage down.
+Two(?) or more stacks is lethal.
+"""
 
 [doom]
 name = "Doom"
 id = 2516
 icon = 15503
 description = "Certain death when counter reaches zero."
-explanation = "Penalty for failing Shadoweye."
+explanation = "Death really is certain."
 phases = [3]
 
 [lvuln]
