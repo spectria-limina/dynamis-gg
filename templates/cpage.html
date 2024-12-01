@@ -1,0 +1,8 @@
+{% extends "abridge/templates/page.html" %}
+
+{%- block comments_init -%}
+    {%- set stylesheets=page.extra.stylesheets | default(value=[]) -%}
+    {%- for i in stylesheets %}
+    <link rel="stylesheet" href="{{ get_url(path=i, trailing_slash=false, cachebust=true) | safe }}" />
+    {%- endfor %}
+{%- endblock -%}

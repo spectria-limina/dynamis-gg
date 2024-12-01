@@ -1,0 +1,78 @@
+$arena-diam: 40px;
+$player-diam: 1.5px;
+
+.strat {
+    width: 500px;
+    height: 500px;
+}
+
+.svg-background {
+    fill: transparent;
+}
+
+.arena-size {
+    cx: 0;
+    cy: 0;
+    r: calc($arena-diam/2);
+    x: calc(-1 * $arena-diam/2);
+    y: calc(-1 * $arena-diam/2);
+    width: $arena-diam;
+    height: $arena-diam;
+}
+
+#boss {
+    x: -5px;
+    y: -5px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(0.5turn);
+}
+
+.player-icon {
+    cx: 0;
+    cy: 0;
+    r: calc($player-diam/2);
+    x: calc(-1 * $player-diam/2);
+    y: calc(-1 * $player-diam/2);
+    width: $player-diam;
+    height: $player-diam;
+}
+
+#mt {
+    y: -6.5;
+}
+
+#ot {
+    x: 0.5;
+    y: 2;
+}
+
+#h1 {
+    x: 2;
+    y: 5;
+}
+
+#h2 {
+    x: -2.5;
+    y: 2;
+}
+
+#m1 {
+    x: 2;
+    y: 1;
+}
+
+#m2 {
+    x: -0.5;
+    y: 3.5;
+}
+
+#r1 {
+    x: -3;
+    y: 4;
+}
+
+#r2 {
+    x: 3;
+    y: 3.5;
+}
