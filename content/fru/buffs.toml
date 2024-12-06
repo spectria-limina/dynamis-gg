@@ -194,7 +194,7 @@ name = "Thin Ice"
 id = 911
 icon = 15615
 description = "Having trouble maintaining a solid foothold upon ice-covered ground."
-explanation = "Players will slide quite a long distance in whatever direction they try to move."
+explanation = "You will slide quite a long distance in whatever direction you try to move. Almost the entire width of the arena."
 phases = [2]
 
 [refulgent-chain]
