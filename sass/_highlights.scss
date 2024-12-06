@@ -28,7 +28,18 @@
     color: rgb(48, 80, 92);
 }
 
-.hl-cast {
+.hl-cast,
+.hl-dam {
     font-weight: bold;
     color: var(--f2);
+}
+
+
+// This assumes we are using the light/dark switcher defaulting to dark.
+.hl-mob {
+    font-weight: 200;
+
+    .switch & {
+        font-weight: 300;
+    }
 }

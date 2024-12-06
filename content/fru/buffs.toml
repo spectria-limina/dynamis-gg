@@ -127,6 +127,20 @@ description = "Sustaining damage over time."
 explanation = "This is a very strong bleed from the raidwide."
 phases = [1]
 
+[bleed-p2]
+name = "Bleeding"
+id = 3077
+icon = 215530
+description = "Sustaining damage over time."
+explanation = """
+This is a *massive* dot as a penalty for standing in a Sinbound Holy puddle.
+It is so strong that it typically one-shots.
+
+Technically, it is two separate debuffs.
+The first one has indefinite duration, but when it ticks it replaces itself with a 30-second version.
+"""
+phases = [1]
+
 [powder-mark]
 name = "Powder Mark Trail"
 id = 4166
@@ -180,7 +194,7 @@ name = "Thin Ice"
 id = 911
 icon = 15615
 description = "Having trouble maintaining a solid foothold upon ice-covered ground."
-explanation = "Slip 'n' slide."
+explanation = "Players will slide quite a long distance in whatever direction they try to move."
 phases = [2]
 
 [refulgent-chain]
@@ -221,7 +235,7 @@ id = 4163
 icon = 215004
 description = "Unable to execute actions."
 explanation = "Can't move or take actions."
-phases = [3, 4]
+phases = [2, 3, 4]
 
 [wyrm-red]
 name = "Wyrmclaw"

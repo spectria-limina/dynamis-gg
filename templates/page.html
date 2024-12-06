@@ -1,0 +1,51 @@
+
+{%- extends "abridge/templates/page.html" %}
+    {%- block toc %}
+    {%- if config.extra.toc | default(value=true) %}
+    {%- if page.extra.toc %}
+    {%- set toc = page.toc %}
+    {%- endif %}
+    {%- if toc or page.extra.sectoc %}
+
+    <div class="sblock">
+      {%- if page.extra.sectoc %}
+      {%- set sec_path = page.ancestors | last %}
+      {%- set section = get_section(path=sec_path) -%}
+      <div class="blockdiv sectoc index">
+        <div class="index-head"><a href="{{ section.permalink | safe }}{%- if uglyurls %}index.html{%- endif %}">
+            {{- section.extra.short_title | default(value=section.title) -}}
+        </a></div>
+          <ol>{%- for inner in section.pages %}
+            <li>
+            {%- if page.permalink == inner.permalink %}
+              <a class="scur" href="{{ inner.permalink | safe }}{%- if uglyurls %}index.html{%- endif %}">{{ inner.title }}</a><br>
+            {%- else %}
+              <a href="{{ inner.permalink | safe }}{%- if uglyurls %}index.html{%- endif %}">{{ inner.title }}</a><br>
+            {%- endif %}
+            </li>
+          {%- endfor %}</ol>
+      </hr>
+      </div>
+      {%- endif %}
+
+      {%- if toc %}
+      <div class="blockdiv sticky toc index">
+        <div class="index-head"><a href="#">{{ page.extra.short_title | default(value=page.title) }}</a></div>
+        <ol>{%- for h in toc %}
+        <li>
+          <a href="#{{h.id | safe}}">{{ h.title }}</a>
+        </li>
+        {%- if h.children %}
+        <ol>{%- for h2 in h.children %}
+        <li>
+          <a href="#{{h2.id | safe}}">{{ h2.title }}</a>
+        </li>
+        {%- endfor %}</ol>
+        {%- endif %}
+        {%- endfor %}</ol>
+      </div>
+    </div>
+    {%- endif %}
+    {%- endif %}
+    {%- endif %}
+    {%- endblock toc %}

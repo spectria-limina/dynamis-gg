@@ -4,10 +4,15 @@
 
 @use "buffs";
 @use "highlights";
+@use "index";
 
 article {
     max-width: 30cm;
     margin: auto;
+}
+
+table {
+    width: unset;
 }
 
 mark {
@@ -16,26 +21,26 @@ mark {
     padding: 0;
 }
 
-.unconfirmed::before {
-    content: 'Unconfirmed:';
-    color: var(--c4);
-    text-decoration: underline 1px;
-    padding-right: 0.5ch;
-}
-
 .unconfirmed {
     font-style: italic;
+
+    ::before {
+        content: 'Unconfirmed:';
+        color: var(--c4);
+        text-decoration: underline 1px;
+        padding-right: 0.5ch;
+    }
 }
 
 .tooltip {
     max-width: 9cm;
-    padding: .3rem .5rem .3rem .5rem;
+    padding: .4rem .5rem;
     border-top: 2px solid var(--a1);
     border-bottom: 1px solid var(--c4);
     border-left: 1px solid var(--c4);
     border-right: 1px solid var(--c4);
-}
 
-.tooltip hr {
-    margin: 0.3em -0.25em;
+    hr {
+        margin: 0.3rem -0.20rem;
+    }
 }

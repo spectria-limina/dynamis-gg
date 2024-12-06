@@ -3,31 +3,28 @@
     align-items: baseline;
     vertical-align: baseline;
     padding: 0 0.05em;
+
+    img {
+        display: inline-block;
+        height: 0.9lh;
+        margin-top: -100%;
+        padding-top: 1mm;
+    }
 }
 
-.buff img {
-    display: inline-block;
-    height: 0.9lh;
-    margin-top: -100%;
-    padding-top: 1mm;
-}
+.buff-table {
+    margin: 0 2.5%;
+    display: table;
 
-$cleanse-color: rgb(116, 240, 240);
+    th {
+        text-align: center;
+        border-bottom: solid var(--a4) 1px;
+    }
 
-.buff-cleansable {
-    display: inline !important;
-    height: 0.3mm;
-    width: 78%;
-    background-color: $cleanse-color;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    box-shadow: 1px 1px 1px $cleanse-color,
-        1px -1px 1px $cleanse-color,
-        -1px -1px 1px $cleanse-color,
-        -1px 1px 1px $cleanse-color;
+    td>.buff-icon img {
+        min-width: 3mm;
+        max-width: 6mm;
+    }
 }
 
 .buff-icon {
@@ -43,9 +40,27 @@ div.buff-icon {
     display: flex;
 }
 
-.buff-table td>.buff-icon img {
-    min-width: 3mm;
-    max-width: 6mm;
+$cleanse-color: rgb(177, 239, 239);
+
+.buff-cleansable {
+    display: inline !important;
+    position: absolute;
+    height: 8%;
+    width: 80%;
+    background-color: $cleanse-color;
+    margin-left: auto;
+    margin-right: auto;
+    top: -0.42lh;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 1px $cleanse-color,
+        1px -1px 1px $cleanse-color,
+        -1px -1px 1px $cleanse-color,
+        -1px 1px 1px $cleanse-color;
+
+    .buff-table & {
+        top: 0
+    }
 }
 
 .buff-duration {
@@ -58,21 +73,34 @@ div.buff-icon {
     text-shadow: 1px 1px var(--c2), 1px -1px var(--c2), -1px -1px var(--c2), -1px 1px var(--c2);
 }
 
-.buff .buff-name {
-    padding-left: 0.15em;
-}
-
 .buff-name {
     font-weight: bold;
     color: var(--f2);
-}
 
-.tooltip .buff-name {
-    text-align: center;
+    .buff & {
+        padding-left: 0.15em;
+    }
+
+    .tooltip & {
+        text-align: center;
+    }
 }
 
 .buff-explanation {
     font-size: 0.85em;
+
+    p {
+        font-size: inherit;
+        margin-block: 0.4em;
+
+        &:first-child {
+            margin-block-start: 0;
+        }
+
+        &:last-child {
+            margin-block-end: 0;
+        }
+    }
 }
 
 .buff-description {
@@ -80,10 +108,4 @@ div.buff-icon {
     font-style: italic;
     margin: 0 0.2em;
     text-align: center;
-}
-
-table.buff-table {
-    margin: 0 2.5%;
-    gap: 20em;
-    display: table;
 }

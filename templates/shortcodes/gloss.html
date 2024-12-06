@@ -1,0 +1,7 @@
+{%- set datapath = datapath | default(value="/gloss.toml") %}
+{%- set data = load_data(path=datapath) %}
+{# It's okay if there's no key if text and title are both provided #}
+{%- set key = k | default(value="") %}
+{%- set text = t | default(value=key) %}
+{%- set title = exp | default(value=data[key]) -%}
+<abbr title="{{title | safe}}">{{text | safe}}</abbr>

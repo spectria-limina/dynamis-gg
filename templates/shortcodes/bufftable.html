@@ -12,6 +12,11 @@
 {% endfor %}
 
 <table class="buff-table">
+    <tr>
+        <th colspan="2">Buff</th>
+        <th>Description</th>
+        <th>Notes</th>
+    </tr>
 {% for buff in filtered | sort(attribute="name") %}
     <tr>
         <td>
@@ -19,12 +24,12 @@
                 {% if buff.cleansable %}
                     <span class="buff-cleansable"></span>
                 {% endif %}
-                <img src="https://garlandtools.org/files/icons/status/{{buff.icon|default(value="")}}.png" loading="lazy" />
+                <img src="https://garlandtools.org/files/icons/status/{{buff.icon|default(value="")|safe}}.png" loading="lazy" />
             </div>
         </td> 
-        <td class="buff-name">{{buff.name}}</td>
-        <td class="buff-description">{{buff.description | default(value="")}}</td>
-        <td class="buff-explanation">{{buff.explanation | default(value="")}}</td>
+        <td class="buff-name">{{buff.name | safe}}</td>
+        <td class="buff-description">{{buff.description | default(value="") | safe}}</td>
+        <td class="buff-explanation">{{buff.explanation | default(value="") | markdown | safe}}</td>
     </tr>
 {% endfor %}
 </table>

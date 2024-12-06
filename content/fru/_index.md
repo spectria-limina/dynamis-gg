@@ -1,11 +1,12 @@
 +++
-title="Futures Rewritten (Ultimate)"
-sort_by="weight"
-paginate_by=6
-template="index.html"
-description="Mechanical guides & other resources for FRU."
+title = "Futures Rewritten (Ultimate)"
+sort_by = "weight"
+paginate_by = 10
+template = "index.html"
+description = "Mechanical guides & other resources for FRU."
 
 [extra]
-static_thumbnail="static/FRU.webp"
+short_title = "Futures Rewritten"
+static_thumbnail = "static/FRU.webp"
 +++
 

@@ -3,6 +3,10 @@ title = "Appendix: Buffs"
 weight = 100
 draft = false
 description = "Mechanical guide to the (de)buffs in Futures Rewritten (Ultimate)"
+
+[extra]
+toc = true
+sectoc = true
 +++
 ## All Phases
 

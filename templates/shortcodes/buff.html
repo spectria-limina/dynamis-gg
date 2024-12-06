@@ -1,36 +1,36 @@
-{% set dir = page.relative_path | split(pat="/") | slice(end=-1) | join(sep="/") %}
-{% set datapath = datapath | default(value=dir~"/buffs.toml") %}
-{% set data = load_data(path=datapath) %}
-{% set buff = b | default(value=buff) %}
-{% set buff = data[buff] %}
-{% set description = description | default(value=buff.description) %}
-{% set explanation = explanation | default(value=buff.explanation) %}
+{%- set dir = page.relative_path | split(pat="/") | slice(end=-1) | join(sep="/") %}
+{%- set datapath = datapath | default(value=dir~"/buffs.toml") %}
+{%- set data = load_data(path=datapath) %}
+{%- set buff = b | default(value=buff) %}
+{%- set buff = data[buff] %}
+{%- set description = description | default(value=buff.description) %}
+{%- set explanation = explanation | default(value=buff.explanation) %}
 <span class="buff" >
     <span class="buff-icon"
       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
       data-bs-title="
-        {% if short %}
-            <div class='buff-name'> {{buff.name}} </div>
-        {% endif %}
-        {% if description %}
+        {%- if short %}
+            <div class='buff-name'> {{buff.name | safe}} </div>
+        {%- endif %}
+        {%- if description %}
             <div class='buff-description'> {{buff.description | safe}} </div>
-            {% if explanation %}
+            {%- if explanation %}
                 <hr>
-            {% endif %}
-        {% endif %}
-        {% if explanation %}
-            <div class='buff-explanation'> {{explanation | safe}} </div>
-        {% endif %}
+            {%- endif %}
+        {%- endif %}
+        {%- if explanation %}
+            <div class='buff-explanation'> {{explanation | markdown | safe}} </div>
+        {%- endif %}
     ">
-        {% if buff.cleansable %}
+        {%- if buff.cleansable %}
             <span class="buff-cleansable"></span>
-        {% endif %}
+        {%- endif %}
         <img src="https://garlandtools.org/files/icons/status/{{buff.icon}}.png" loading="lazy" />
-        {% if duration or dur %}
-            <span class="buff-duration">{{dur | default(value=duration)}}</span>
-        {% endif %}
+        {%- if duration or dur %}
+            <span class="buff-duration">{{dur | default(value=duration) | safe}}</span>
+        {%- endif %}
     </span>
-    {% if not short %}
-        <span class="buff-name">{{buff.name}}</span>
-    {% endif %}
+    {%- if not short %}
+        <span class="buff-name">{{buff.name | safe}}</span>
+    {%- endif %}
 </span>
