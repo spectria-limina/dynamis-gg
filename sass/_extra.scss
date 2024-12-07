@@ -7,14 +7,6 @@
 @use "highlights";
 @use "index";
 
-:root {
-    --hl: $hld;
-
-    &.switch {
-        --hl: $hl;
-    }
-}
-
 article {
     max-width: 30cm;
     margin: auto;

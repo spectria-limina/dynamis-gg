@@ -2,3 +2,11 @@ $hl: #c40;
 $hl-esc: "%23c40";
 $hld: #f90;
 $hld-esc: "%23f90";
+
+:root {
+    #{--hl}: $hld;
+
+    &.switch {
+        #{--hl}: $hl;
+    }
+}
