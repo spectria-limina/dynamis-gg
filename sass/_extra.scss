@@ -3,8 +3,17 @@
  *****************************************************************************/
 
 @use "buffs";
+@use "collapse";
 @use "highlights";
 @use "index";
+
+:root {
+    --hl: $hld;
+
+    &.switch {
+        --hl: $hl;
+    }
+}
 
 article {
     max-width: 30cm;
@@ -35,7 +44,7 @@ mark {
 .tooltip {
     max-width: 9cm;
     padding: .4rem .5rem;
-    border-top: 2px solid var(--a1);
+    border-top: 2px solid var(--hl);
     border-bottom: 1px solid var(--c4);
     border-left: 1px solid var(--c4);
     border-right: 1px solid var(--c4);
@@ -50,7 +59,7 @@ table {
 }
 
 th {
-    border-bottom: solid var(--a4) var(--bw);
+    border-bottom: solid var(--hl) var(--bw);
 }
 
 tr {
@@ -81,7 +90,7 @@ li {
 }
 
 main hr {
-    border-top: 1px solid var(--a2);
+    border-top: 1px solid var(--hl);
     margin: .9rem .3rem;
 }
 

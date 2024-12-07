@@ -1,3 +1,6 @@
+// See themes/abridge/LICENSE for the license of this file.
+
+@use "vars";
 @use '../themes/abridge/sass/abridge' with ( /// LINES HERE END WITH COMMA AFTER THE VALUE!
   /// The things your less likely to need to override have been commented out.
 
@@ -81,10 +84,10 @@
   //$c2d: #222,// Background Color Secondary
   //$c3d: #333,// Table Rows, Block quote edge, Borders
   //$c4d: #777,// Disabled Buttons, Borders, mark background
-  //$a1d: #f90,// link color
+  $a1d: vars.$hld, // link color
   //$a2d: #fb0,// link hover/focus color
-  //$a3d: #f90,// link h1-h2 hover/focus color
-  //$a4d: #f90,// link visited color
+  $a3d: vars.$hld, // link h1-h2 hover/focus color
+  $a4d: vars.$hld, // link visited color
   //$cgd: #593,// ins green, success
   //$crd: #e33,// del red, errors
 
@@ -95,10 +98,10 @@
   //$c2: #eee,// Background Color Secondary
   //$c3: #ddd,// Table Rows, Block quote edge, Borders
   //$c4: #555,// Disabled Buttons, Borders, mark background
-  //$a1: #c40,// link color
+  $a1: vars.$hl, // link color
   //$a2: #e60,// link hover/focus color
   //$a3: #f90,// link h1-h2 hover/focus color
-  //$a4: #c40,// link visited color
+  $a4: vars.$hl, // link visited color
   //$cg: #373,// ins green, success
   //$cr: #d33,// del red, errors
 
@@ -195,7 +198,9 @@
   //$syntax: true,//syntax highlighting for code blocks
   //$coderoundhighlight: false,//round corners on highlighted code blocks
 );
+
 @use "extra";
+
 /******************************************************************************
  *   FONTS - Abridge by default uses the System Font Stack
  *     https://css-tricks.com/snippets/css/system-font-stack/
