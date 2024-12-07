@@ -80,15 +80,9 @@ li {
     }
 }
 
-hr {
-    color: var(--c3);
+main hr {
     border-top: 1px solid var(--a2);
-    width: 97%;
-
-    main &,
-    header & {
-        margin: .9rem auto;
-    }
+    margin: .9rem .3rem;
 }
 
 .footnotes-list {

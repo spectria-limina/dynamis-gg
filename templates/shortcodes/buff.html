@@ -29,14 +29,25 @@
 {%- elif islen == 5 -%}
   {%- set iconseries = "0" ~ iconseries -%}
 {%- endif -%}
+{%- set durlong = dur | default(value="") -%}
+{%- if dur and dur is number -%}
+  {%- set durlong = dur | as_str -%}
+  {%- set durlong = durlong~"s" -%}
+{%- endif -%}
 <span class="buff" >
     <span class="buff-icon"
       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
       data-bs-title="
-        {%- if short or stacks %}
+        {%- if short or stacks or dur %}
             <div class='buff-name'>{{buff.name | safe}}
-                {%- if stacks -%}
-                    <span class='buff-stacks'> ({{stacks}} stack{{stacks | pluralize}})</span>
+                {%- if stacks or dur -%}
+                    <span class='buff-params'> (
+                      {%- if stacks -%}
+                        {{stacks}} stack{{stacks | pluralize}}
+                        {%- if dur %} {% endif -%}
+                      {%- endif -%}
+                      {%- if dur -%}for {{durlong}}{%- endif -%}
+                    )</span>
                 {%- endif -%}
             </div>
         {%- endif %}
