@@ -44,3 +44,70 @@ mark {
         margin: 0.3rem -0.20rem;
     }
 }
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    border-bottom: solid var(--a4) var(--bw);
+}
+
+tr {
+    border-left: var(--bw) solid var(--c3);
+    border-right: var(--bw) solid var(--c3);
+
+    thead & {
+        background-color: var(--c1);
+    }
+}
+
+@counter-style decimal-wide {
+    system: numeric;
+    symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+    prefix: "";
+    suffix: ". \2009";
+}
+
+li {
+    li {
+        margin-bottom: 0.2rem;
+    }
+
+    ul,
+    ol {
+        margin: 0.35rem 0;
+    }
+}
+
+hr {
+    color: var(--c3);
+    border-top: 1px solid var(--a2);
+    width: 97%;
+
+    main &,
+    header & {
+        margin: .9rem auto;
+    }
+}
+
+.footnotes-list {
+    font-size: 0.82em;
+    padding-left: 2em;
+    padding-right: 3em;
+    list-style: decimal-wide;
+
+    >li::marker {
+        font-size: 1.00em;
+        font-weight: 600;
+    }
+
+    li {
+        margin-block: 0.7em;
+    }
+
+    li p {
+        margin-block: 0.28em;
+        font-size: inherit;
+    }
+}

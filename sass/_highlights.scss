@@ -1,36 +1,52 @@
-.hl-elec {
+.hl-fire,
+.hl-elec,
+.hl-water,
+.hl-ice,
+.hl-earth,
+.hl-wind,
+.hl-light,
+.hl-dark,
+.hl-cast,
+.hl-tank,
+.hl-dps,
+.hl-healer,
+.hl-support {
     font-weight: bold;
+}
+
+.hl-elec {
     color: rgb(170, 39, 187);
 }
 
 .hl-fire {
-    font-weight: bold;
     color: rgb(212, 54, 14);
 }
 
+.hl-ice {
+    color: rgb(156, 206, 220);
+}
+
+.hl-light {
+    color: rgb(222, 210, 138);
+}
+
 .hl-tank {
-    font-weight: bold;
     color: rgb(45, 58, 128);
 }
 
 .hl-dps {
-    font-weight: bold;
     color: rgb(115, 40, 40);
 }
 
 .hl-healer {
-    font-weight: bold;
     color: rgb(52, 102, 36);
 }
 
 .hl-support {
-    font-weight: bold;
     color: rgb(48, 80, 92);
 }
 
-.hl-cast,
-.hl-dam {
-    font-weight: bold;
+.hl-cast {
     color: var(--f2);
 }
 

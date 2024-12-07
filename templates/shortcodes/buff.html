@@ -5,12 +5,40 @@
 {%- set buff = data[buff] %}
 {%- set description = description | default(value=buff.description) %}
 {%- set explanation = explanation | default(value=buff.explanation) %}
+{%- set icon = buff.icon %}
+{# lol... #}
+{%- if stacks %}
+  {%- set icon = icon + stacks - 1 %}
+{%- endif -%}
+{%- set iconseries = icon / 1000 | round(method="floor") | as_str %}
+{%- set icon = icon | as_str -%}
+{%- set ilen = icon | length %}
+{%- if ilen == 3 %}
+  {%- set icon = "000" ~ icon -%}
+{%- elif ilen == 4 -%}
+  {%- set icon = "00" ~ icon -%}
+{%- elif ilen == 5 -%}
+  {%- set icon = "0" ~ icon -%}
+{%- endif -%}
+{%- set iconseries = iconseries ~ "000" %}
+{%- set islen = iconseries | length %}
+{%- if islen == 3 %}
+  {%- set iconseries = "000" ~ iconseries -%}
+{%- elif islen == 4 -%}
+  {%- set iconseries = "00" ~ iconseries -%}
+{%- elif islen == 5 -%}
+  {%- set iconseries = "0" ~ iconseries -%}
+{%- endif -%}
 <span class="buff" >
     <span class="buff-icon"
       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
       data-bs-title="
-        {%- if short %}
-            <div class='buff-name'> {{buff.name | safe}} </div>
+        {%- if short or stacks %}
+            <div class='buff-name'>{{buff.name | safe}}
+                {%- if stacks -%}
+                    <span class='buff-stacks'> ({{stacks}} stack{{stacks | pluralize}})</span>
+                {%- endif -%}
+            </div>
         {%- endif %}
         {%- if description %}
             <div class='buff-description'> {{buff.description | safe}} </div>
@@ -25,7 +53,7 @@
         {%- if buff.cleansable %}
             <span class="buff-cleansable"></span>
         {%- endif %}
-        <img src="https://garlandtools.org/files/icons/status/{{buff.icon}}.png" loading="lazy" />
+        <img src="https://xivapi.com/i/{{iconseries}}/{{icon}}.png" loading="lazy" />
         {%- if duration or dur %}
             <span class="buff-duration">{{dur | default(value=duration) | safe}}</span>
         {%- endif %}

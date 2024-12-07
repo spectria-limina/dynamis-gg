@@ -12,24 +12,48 @@
 {% endfor %}
 
 <table class="buff-table">
-    <tr>
-        <th colspan="2">Buff</th>
-        <th>Description</th>
-        <th>Notes</th>
-    </tr>
-{% for buff in filtered | sort(attribute="name") %}
-    <tr>
-        <td>
-            <div class="buff-icon">
-                {% if buff.cleansable %}
-                    <span class="buff-cleansable"></span>
-                {% endif %}
-                <img src="https://garlandtools.org/files/icons/status/{{buff.icon|default(value="")|safe}}.png" loading="lazy" />
-            </div>
-        </td> 
-        <td class="buff-name">{{buff.name | safe}}</td>
-        <td class="buff-description">{{buff.description | default(value="") | safe}}</td>
-        <td class="buff-explanation">{{buff.explanation | default(value="") | markdown | safe}}</td>
-    </tr>
-{% endfor %}
+    <thead>
+        <tr>
+            <th colspan="2">Buff</th>
+            <th>Description</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for buff in filtered | sort(attribute="name") %}
+        <tr>
+            <td>
+            {# lol... #}
+            {%- set iconseries = buff.icon / 1000 | round(method="floor") | as_str %}
+            {%- set icon = buff.icon | as_str -%}
+            {%- set ilen = icon | length %}
+            {%- if ilen == 3 %}
+                {%- set icon = "000" ~ icon -%}
+            {%- elif ilen == 4 -%}
+                {%- set icon = "00" ~ icon -%}
+            {%- elif ilen == 5 -%}
+                {%- set icon = "0" ~ icon -%}
+            {%- endif -%}
+            {%- set iconseries = iconseries ~ "000" %}
+            {%- set islen = iconseries | length %}
+            {%- if islen == 3 %}
+                {%- set iconseries = "000" ~ iconseries -%}
+            {%- elif islen == 4 -%}
+                {%- set iconseries = "00" ~ iconseries -%}
+            {%- elif islen == 5 -%}
+                {%- set iconseries = "0" ~ iconseries -%}
+            {%- endif -%}
+                <div class="buff-icon">
+                    {% if buff.cleansable %}
+                        <span class="buff-cleansable"></span>
+                    {% endif %}
+                    <img src="https://xivapi.com/i/{{iconseries}}/{{icon}}.png" loading="lazy" />
+                </div>
+            </td> 
+            <td class="buff-name">{{buff.name | safe}}</td>
+            <td class="buff-description">{{buff.description | default(value="") | safe}}</td>
+            <td class="buff-explanation">{{buff.explanation | default(value="") | markdown | safe}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
 </table>
