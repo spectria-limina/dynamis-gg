@@ -1,5 +1,8 @@
 AoE = "Area of Effect"
 AoEs = "Areas of Effect"
+DoT = "Damage over Time"
+DoTs = "Damage over Time"
+
 omen = "A puddle telegraphing an upcoming AoE"
 Omen = "A puddle telegraphing an upcoming AoE"
 omens = "Puddle telegraphing an upcoming AoE"

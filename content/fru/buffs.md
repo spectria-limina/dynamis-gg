@@ -20,6 +20,10 @@ sectoc = true
 
 {{bufftable(phase=2)}}
 
+## Phase 2 Intermission
+
+{{bufftable(phase=2.5)}}
+
 ## Phase 3
 
 {{bufftable(phase=3)}}

@@ -89,6 +89,24 @@ description = "Designated target of Unholy Darkness, which will activate when th
 explanation = "Unholy Darkness is a large party stack. Will inflict Mark of Mortality if not soaked by 5+ players."
 phases = [3, 4]
 
+[siw-quietus]
+name = "Spell-in-Waiting: Quietus"
+id = 4174
+icon = 215341
+description = "Designated target of Quietus, which will activate when this effect expires."
+explanation = "Quietus is a raidwide with no additional effects."
+phases = [4]
+
+[siw-refrain]
+name = "Spell-in-Waiting Refrain"
+id = 4373
+icon = 214189
+description = "The next spell cast will activate in stages after a delay."
+explanation = """
+This buff is purely an indicator that the Oracle's Dark Water III during Apocalypse will be broken into stages. There's no other effect.
+"""
+phases = [3]
+
 [mvuln]
 name = "Magic Vulnerability Up"
 id = 2941
@@ -302,3 +320,23 @@ icon = 15485
 description = "Dark resistance is significantly reduced."
 explanation = "Dark damage is lethal."
 phases = [5]
+
+[vuln-down]
+name = "Vulnerability Down"
+id = 2198
+icon = 15021
+description = "Damage taken is reduced."
+explanation = """
+The crystals receive this buff if they are hit by one of the cleaves.
+
+The Ice Veil receives it in place of Invicincibility if all the light crystals are killed but any dark crystals are left alive.
+"""
+phases = [2.5]
+
+[invincibility]
+name = "Invincibility"
+id = 775
+icon = 15024
+description = "Invulnerable to all damage."
+explanation = "The Ice Veil is immune to all damage until all the light crystals are killed."
+phases = [2.5]
