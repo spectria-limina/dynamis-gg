@@ -90,7 +90,12 @@ $cleanse-color: rgb(177, 239, 239);
 }
 
 .buff-explanation {
-    font-size: 0.85em;
+    font-size: 0.95em;
+
+    p {
+        font-size: inherit;
+        margin: 0.5em 0.1em 0.3em 0.1em;
+    }
 }
 
 .buff-description {
