@@ -340,3 +340,11 @@ icon = 15024
 description = "Invulnerable to all damage."
 explanation = "The Ice Veil is immune to all damage while any crystals are tethered to it."
 phases = [2.5]
+
+[down-for-the-count]
+name = "Down for the Count"
+id = 2408
+icon = 15044
+description = "Unable to move or execute actions."
+explanation = "Given during the transition to phase 5."
+phases = [5]
