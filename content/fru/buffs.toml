@@ -30,7 +30,7 @@ name = "Lightsteeped"
 id = 2257
 icon = 17091
 description = "Overflowing with astral energy. Upon accumulating 5 stacks, you will deal unaspected damage to those nearby."
-explanation = "Wipes the party at 5 stacks."
+explanation = "At 5 stacks, explodes in a raidwide that inflicts an additional stack on everyone. The ensuing chain reaction will almost invariably wipe the party."
 phases = [2, 4]
 
 [siw-water]
@@ -157,7 +157,7 @@ It is so strong that it typically one-shots.
 Technically, it is two separate debuffs.
 The first one has indefinite duration, but when it ticks it replaces itself with a 30-second version.
 """
-phases = [1]
+phases = [2, 2.5]
 
 [powder-mark]
 name = "Powder Mark Trail"
