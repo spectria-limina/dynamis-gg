@@ -70,14 +70,19 @@ tr {
     suffix: ". \2009";
 }
 
+ul,
+ol {
+    padding-inline-start: 1.6em;
+}
+
 li {
     li {
-        margin-bottom: 0.2rem;
+        margin-block-end: 0.2em;
     }
 
     ul,
     ol {
-        margin: 0.35rem 0;
+        margin: 0.35em 0 0;
     }
 }
 
@@ -88,8 +93,7 @@ main hr {
 
 .footnotes-list {
     font-size: 0.82em;
-    padding-left: 2em;
-    padding-right: 3em;
+    padding-inline: 2em 3em;
     list-style: decimal-wide;
 
     >li::marker {
