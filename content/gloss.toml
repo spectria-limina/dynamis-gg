@@ -12,7 +12,8 @@ Omens = "Puddle telegraphing an upcoming AoE"
 "principal directions" = "Cardinals or intercardinals"
 "Principal directions" = "Cardinals or intercardinals"
 
-"exalines" = "A series of line AoEs, shifted each hit so they are like a single traveling wave. An exaflare but straight."
+"exaline" = "A series of line AoEs, shifted each hit so they are like a single traveling wave. An exaflare but straight."
+"exalines" = "Series of line AoEs, shifted each hit so they are like a single traveling wave. An exaflare but straight."
 
 "stack" = "An attack that shares damage among all the players hit"
 "Stack" = "An attack that shares damage among all the players hit"
@@ -30,6 +31,8 @@ Omens = "Puddle telegraphing an upcoming AoE"
 "LP-stacks" = "Shared-damage stacks meant for a light party, i.e. 4 players"
 "full-party stack" = "A shared-damage stack meant for the entire party"
 "Full-party stack" = "A shared-damage stack meant for the entire party"
+
+"wild charge" = "An attack intended to be taken by multiple players that deals more damage to the player(s) closest to the source of damage. Often, but not always, the damage is shared."
 
 E8N = "Eden's Verse: Refulgence"
 E8S = "Eden's Verse: Refulgence (Savage)"
