@@ -1,0 +1,5 @@
+
+Sitemap: https://dynamis.gg/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://dynamis.gg
