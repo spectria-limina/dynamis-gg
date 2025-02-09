@@ -9,6 +9,11 @@ toc = true
 sectoc = true
 +++
 Thanks for reading these guides; I appreciate the support.
+I've received a lot of compliments for these guides,
+and hope to improve them and make more quality content in the future.
+If you enjoyed the guides, please get in touch and let me know!
+That's what gives me motivation.
+I am, however, busy with law school, so I may not always get to them right away.
 
 This page is just to outline a few of my future plans for these guides, in case you're curious.
 
