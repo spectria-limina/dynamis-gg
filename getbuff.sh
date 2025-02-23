@@ -11,8 +11,15 @@ if [ "$ERROR" = "true" ]; then jq >&2 <"$TEMP" .Message; false; fi
 ICON=$(jq <"$TEMP" .IconID)
 NAME=$(jq <"$TEMP" .Name_en)
 DESC=$(jq <"$TEMP" .Description)
+if [ -z "$2" ]; then
+  KEY=$((sed -e "s/ /-/g" -e 's/"//g' | tr A-Z a-z) <<<"$NAME")
+  KEY=${KEY:-unknown-buff}
+else
+  KEY=$2
+fi
 cat <<DONE
-[${2:-new-buff}]
+
+[$KEY]
 name = $NAME
 id = $1
 icon = $ICON
