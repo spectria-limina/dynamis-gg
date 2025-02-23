@@ -1,0 +1,311 @@
+[ddown]
+name = "Damage Down"
+id = 628
+icon = 18441
+description = "Damage dealt is reduced."
+explanation = """This is a 25%, stackable damage down."""
+phases = [1]
+
+[lvlun]
+name = "Lightning Resistance Down"
+id = 4386
+icon = 217741
+phases = [1]
+description = "Lightning resistance is reduced."
+explanation = """
+Causes autoattacks from the Cloud of Darkness to deal 20% more damage per stack.
+Stacks up to a maximum of 16 stacks.
+"""
+
+[vuln-up]
+name = "Vulnerability Up"
+id = 4375
+icon = 217101
+description = "Damage taken is increased."
+explanation = "[??]% damage increase"
+phases = [2]
+
+[deadly-embrace]
+name = "Deadly Embrace"
+id = 4181
+icon = 214242
+description = ""
+explanation = """
+When this expires, a hand will attack you with Grim Embrace, a rectangular AoE facing either forward or backwards,
+depending on the position of the Cloud of Darkness's hand when she applied the debuff.
+Getting hit by the hand inflicts a stack of Damage Down, as well as Doom.
+
+In the moments before this debuff expires, you will also become Heavy.
+"""
+phases = [1]
+
+[cloying-condensation]
+name = "Cloying Condensation"
+id = 2532
+icon = 15342
+description = "Unable to jump due to the Cloud of Darkness's airborne magicks."
+explanation = "Given to players on the tiles, this prevents jumping presumably because it would break the tile mechanics."
+phases = ["tiles"]
+
+[inner-darkness]
+name = "Inner Darkness"
+id = 4177
+icon = 214238
+description = "Inside a barrier of darkness. Attacks on enemies spawning from the gloom outside are ineffective."
+explanation = """
+Applied to all players outside the tiles.
+Attacks include both damage and debuffs.
+Does not prevent players inside the tiles from attacking the Atomos in the corners.
+"""
+phases = ["tiles"]
+
+[outer-darkness]
+name = "Outer Darkness"
+id = 4178
+icon = 214239
+description = "Outside a barrier of darkness. Attacks on the Cloud of Darkness within are ineffective."
+explanation = """
+Applied to all players inside the tiles.
+Attacks include both damage and debuffs.
+"""
+phases = ["platform"]
+
+[sustained-damage]
+name = "Sustained Damage"
+id = 2935
+icon = 15067
+description = "Sustaining damage over time."
+# explanation = ""
+# phases = []
+
+[curse-of-darkness]
+name = "Curse of Darkness"
+id = 2387
+icon = 15284
+description = "Cursed to become a fell minion, unleashing Particle Beam when this effect expires."
+explanation = """
+Particle beam is a narrow cone AoE that shoots out in front of the player.
+Anyone hit will take a significant DoT.
+"""
+phases = ["platform"]
+
+[bleeding]
+name = "Bleeding"
+id = 2088
+icon = 15530
+description = "Sustaining damage over time."
+# explanation = ""
+# phases = []
+
+[doom]
+name = "Doom"
+id = 3364
+icon = 15503
+description = "Certain death when counter reaches zero."
+cleansable = true
+explanation = """
+Inflicted by both the Grim Embrace hands and the small circle and donut of Death IV.  Cleansable with Esuna or Warden's Paean.
+"""
+phases = [1]
+
+[heavy]
+name = "Heavy"
+id = 1595
+icon = 15002
+description = "Movement speed is reduced."
+explanation = """
+Applied briefly before the hands' Grim Embrace attack,
+forcing you to dodge either forward or backward in order to dodge.
+"""
+phases = [1]
+
+[life-drain]
+name = "Life Drain"
+id = 1377
+icon = 15778
+description = "Life force is being drained, causing damage over time."
+explanation = """
+If an Atomos is not killed quickly,
+it will tether to a nearby player and begin draining their HP with this debuff.
+"""
+phases = ["atomos"]
+
+[mvuln]
+name = "Magic Vulnerability Up"
+id = 2941
+icon = 15057
+description = "Magic damage taken is increased."
+explanation = """
+This causes additional magic taken to be lethal,
+and usually indicates some mechanic where a player cannot be hit twice simultaneously.
+"""
+phases = ["all"]
+
+[petrification]
+name = "Petrification"
+id = 3007
+icon = 15001
+description = "Stone-like rigidity is preventing the execution of actions."
+explanation = "Inflicted by Break IV, if a player is looking at the Cloud or any of the Sinister Eyes"
+phases = [1]
+
+[sustained-damage-stack]
+name = "Sustained Damage"
+id = 4149
+icon = 19941
+description = "Sustaining damage over time."
+# explanation = ""
+# phases = []
+
+[thorny-vine]
+name = "Thorny Vine"
+id = 445
+icon = 15582
+description = "Thorny vines are causing damage over time."
+explanation = """
+Before appearing, a purple indicator appears under the player for a few seconds.
+The player is then latched onto a bramble or another player.
+The distance of the dether is locked in at that point,
+and it must be stretched a fixed additional distance in order to be broken.
+If it is not broken quickly, bad stuff happens. [?? figure out the debuff from thorn failure]
+
+The debuff description indicates that it causes damage over time,
+but the damage is minimal.
+"""
+phases = [2]
+
+[stun]
+name = "Stun"
+id = 149
+icon = 15004
+description = "Unable to execute actions."
+# explanation = ""
+# phases = []
+
+[back-with-thee]
+name = "Back with Thee"
+id = 2241
+icon = 15247
+description = "Affected by displacement magicks. When this effect ends, you will be stunned, then forcibly moved backward."
+explanation = """
+Received at random after standing in a puddle left behind by a dead Atomos.
+The destination is telegraphed with an omen.
+Can be used to teleport back into the arena.
+"""
+phases = ["atomos"]
+
+[right-with-thee]
+name = "Right with Thee"
+id = 2243
+icon = 15249
+description = "Affected by displacement magicks. When this effect ends, you will be stunned, then forcibly moved rightward."
+explanation = """
+Received at random after standing in a puddle left behind by a dead Atomos.
+The destination is telegraphed with an omen.
+Can be used to teleport back into the arena.
+"""
+phases = ["atomos"]
+
+[left-with-thee]
+name = "Left with Thee"
+id = 2242
+icon = 15248
+description = "Affected by displacement magicks. When this effect ends, you will be stunned, then forcibly moved leftward."
+explanation = """
+Received at random after standing in a puddle left behind by a dead Atomos.
+The destination is telegraphed with an omen.
+Can be used to teleport back into the arena.
+"""
+phases = ["atomos"]
+
+[forward-with-thee]
+name = "Forward with Thee"
+id = 2240
+icon = 15246
+description = "Affected by displacement magicks. When this effect ends, you will be stunned, then forcibly moved forward."
+explanation = """
+Received at random after standing in a puddle left behind by a dead Atomos.
+Can be used to teleport back into the arena.
+The destination is telegraphed with an omen.
+"""
+phases = ["atomos"]
+
+[stun]
+name = "Stun"
+id = 2656
+icon = 15004
+description = "Unable to execute actions."
+# explanation = ""
+# phases = []
+
+[bleeding]
+name = "Bleeding"
+id = 3078
+icon = 15530
+description = "Sustaining damage over time."
+# explanation = ""
+# phases = []
+
+[bleeding]
+name = "Bleeding"
+id = 3077
+icon = 15530
+description = "Sustaining damage over time."
+# explanation = ""
+# phases = []
+
+[stab-wound]
+name = "Stab Wound"
+id = 3061
+icon = 15522
+description = "Wounds dealt by a piercing weapon are bleeding, causing damage over time."
+# explanation = ""
+# phases = []
+
+[stab-wound]
+name = "Stab Wound"
+id = 3062
+icon = 15522
+description = "Wounds dealt by a piercing weapon are bleeding, causing damage over time."
+# explanation = ""
+# phases = []
+
+[veil-of-darkness]
+name = "Veil of Darkness"
+id = 4179
+icon = 214240
+description = "Accumulating magic in a cumulus shroud."
+explanation = "Appears to be cosmetic. The Cloud has this buff during the fight intro and phase 2."
+phases = ["all"]
+
+[arcane-design]
+name = "Arcane Design"
+id = 4180
+icon = 214241
+description = "Attack magic potency is enhanced, allowing the use of powerfull spells. Damage taken is increased."
+explanation = "This buff is present during phase 1 (and its repeat phase 3). The Cloud takes 61% more damage during these phases."
+phases = ["all"]
+
+[vulnerability-down]
+name = "Vulnerability Down"
+id = 2198
+icon = 15021
+description = "Damage taken is reduced."
+# explanation = ""
+# phases = []
+
+[damage-up]
+name = "Damage Up"
+id = 3129
+icon = 15519
+description = "Damage dealt is increased."
+# explanation = ""
+# phases = []
+
+[Rehabilitation]
+name = "Regenerating HP over time"
+id = 4191
+icon = 0
+description = ""
+# explanation = ""
+# phases = []
