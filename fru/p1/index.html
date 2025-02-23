@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dynamis.gg/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dynamis.gg/abridge.css?h=80b5007a4dacee1da6e0" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dynamis.gg" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://dynamis.gg/manifest.min.json" />
+  <link rel="alternate" type="application/atom+xml" title="Dynamis.gg Atom Feed" href="https://dynamis.gg/atom.xml" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+    ></script>
+<script src="/js/controls.js" defer=true>
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-utilities.min.css"
+    integrity="sha512-4ocAKAxnrkSm7MvkkF1D435kko3/HWWvoi/U9+7+ln94B/U01Mggca05Pm3W59BIv3abl0U3MPdygAPLo5aeqg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Phase 1: Fatebreaker | Dynamis.gg</title>
+  <meta name="author" content="Tvnariea Reksane" />
+  <meta name="copyright" content="Dynamis.gg" />
+  <meta name="description" content="Mechanical guide to phase 1 of Futures Rewritten (Ultimate)." />
+  <link rel="canonical" href="https://dynamis.gg/fru/p1/" />
+  <meta name="keywords" content="ffxiv" />
+  <meta property="og:url" content="https://dynamis.gg/fru/p1/" />
+  <meta name="twitter:url" content="https://dynamis.gg/fru/p1/" />
+  <meta property="og:description" content="Mechanical guide to phase 1 of Futures Rewritten (Ultimate)." />
+  <meta name="twitter:description" content="Mechanical guide to phase 1 of Futures Rewritten (Ultimate)." />
+  <meta property="og:title" content="Phase 1: Fatebreaker | Dynamis.gg" />
+  <meta name="twitter:title" content="Phase 1: Fatebreaker | Dynamis.gg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:site_name" content="Dynamis.gg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="" />
+  <script defer src="https://dynamis.gg/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dynamis.gg/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dynamis.gg" title="Dynamis.gg">Dynamis.gg</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs svgm search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dynamis.gg/fru/p1/">Phase 1: Fatebreaker</a></h1>
+
+    
+
+
+<p>The fight begins with <mark class="hl-mob">Fatebreaker</mark>, the boss from 
+<abbr title="Eden's Verse: Refulgence (Savage)">E8S</abbr>.
+The mechanics will be quite familiar if you’ve done E11S, although there are no light attacks.
+To clear the phase, <mark class="hl-mob">Fatebreaker</mark> must be defeated completely.</p>
+<p>This phase is largely uptime, with a single downtime mechanic.</p>
+<p>Unless otherwise noted, any attack other than a spread, stack, raidwide, or tankbuster inflicts
+<span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Damage Down<span class='buff-params'> (for 2m)</span></div>
+            <div class='buff-description'> Damage dealt is reduced. </div>
+                <hr>
+            <div class='buff-explanation'> <p>This is a 90% damage reduction.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015520.png" loading="lazy" />
+            <span class="buff-duration">2m</span>
+    </span>
+        <span class="buff-name">Damage Down</span>
+</span>, and all spreads and stacks inflict <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Magic Vulnerability Up<span class='buff-params'> (for 2s)</span></div>
+            <div class='buff-description'> Magic damage taken is increased. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Magic damage is lethal.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015057.png" loading="lazy" />
+            <span class="buff-duration">2</span>
+    </span>
+        <span class="buff-name">Magic Vulnerability Up</span>
+</span>.</p>
+<h2 id="sequence-1-cyclonic-break">Sequence 1: Cyclonic Break</h2>
+<p><mark class="hl-mob">Fatebreaker</mark> immediately jumps into a mechanic sequence
+with a <mark class="hl-cast">Cyclonic Break</mark> cast.
+During this cast, he will be surrounded by either <mark class="hl-fire">fire</mark> or <mark class="hl-elec">lightning</mark>.
+This will determine whether you need to <mark class="hl-fire">stack</mark> in pairs or
+<mark class="hl-elec">spread</mark> during the mechanic.
+There are different audio cues for the two elements:
+<mark class="hl-fire">fire</mark> is accompanied by a whooshing sound, and <mark class="hl-elec">lightning</mark> by crackling.</p>
+<p>The attack executes a narrow (22.5°) conal spread targeting each player, without an
+
+<abbr title="A puddle telegraphing an upcoming AoE">omen</abbr>.
+These inflict <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Physical Vulnerability Up<span class='buff-params'> (for 2s)</span></div>
+            <div class='buff-description'> Physical damage taken is increased. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Physical damage is lethal.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015053.png" loading="lazy" />
+            <span class="buff-duration">2</span>
+    </span>
+        <span class="buff-name">Physical Vulnerability Up</span>
+</span>, so any player hit by two or more will die.
+The location of these cones is saved and will be used for the rest of the mechanic.</p>
+<p>2 seconds after the first cones, a second set of cones go out on the same location.
+These must be dodged.
+At the same time, players will be hit by a <mark class="hl-fire">fire</mark> or <mark class="hl-elec">lightning</mark> attack:</p>
+<ul>
+<li>
+<p>If it is <mark class="hl-fire">fire</mark>, then each <mark class="hl-dps">DPS</mark> will be hit
+by <mark class="hl-fire">Sinsmoke</mark>, a 
+<abbr title="A shared-damage stack meant for 2 players">pair stack</abbr> 
+<abbr title="Area of Effect">AoE</abbr>.
+For each dead <mark class="hl-dps">DPS</mark>, the attack will hit a random <mark class="hl-support">support</mark> instead,
+<mark class="unconfirmed">doubling up if fewer than four players are alive.</mark></p>
+</li>
+<li>
+<p>If it is <mark class="hl-elec">lightning</mark>, then all players will be hit by <mark class="hl-elec">Sinsmite</mark>, a
+spread AoE.</p>
+</li>
+</ul>
+<p>After the second set of cones and stack/spread, two more sets of cones go out, one after the other.
+Each is rotated clockwise from the previous by 1/16th of a circle
+(22.5°, i.e. one cone’s width).
+Like the second set, these must be dodged.</p>
+<h3 id="powder-mark-trail">Powder Mark Trail</h3>
+<p>As <mark class="hl-cast">Cyclonic Break</mark> resolves,
+<mark class="hl-mob">Fatebreaker</mark> casts <mark class="hl-cast">Power Mark Trail</mark>,
+a single-target tankbuster that inflicts both <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Powder Mark Trail<span class='buff-params'> (for 16s)</span></div>
+            <div class='buff-description'> Emblazoned with a gunpowder mark that will cause you and the nearest ally to explode when this effect expires. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Both players are hit by large AoE tankbusters. The explosions will go off immediately if the bearer dies.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/214000/214234.png" loading="lazy" />
+            <span class="buff-duration">16</span>
+    </span>
+        <span class="buff-name">Powder Mark Trail</span>
+</span> and
+<span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Physical Vulnerability Up<span class='buff-params'> (for 14s)</span></div>
+            <div class='buff-description'> Physical damage taken is increased. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Physical damage is lethal.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015053.png" loading="lazy" />
+            <span class="buff-duration">14</span>
+    </span>
+        <span class="buff-name">Physical Vulnerability Up</span>
+</span>.
+The <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Powder Mark Trail</div>
+            <div class='buff-description'> Emblazoned with a gunpowder mark that will cause you and the nearest ally to explode when this effect expires. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Both players are hit by large AoE tankbusters. The explosions will go off immediately if the bearer dies.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/214000/214234.png" loading="lazy" />
+    </span>
+</span> will explode if the tank dies or at the start of the next
+mechanic.
+while the <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Physical Vulnerability Up</div>
+            <div class='buff-description'> Physical damage taken is increased. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Physical damage is lethal.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015053.png" loading="lazy" />
+    </span>
+</span> will cause subsequent auto-attacks to be lethal.</p>
+<h2 id="sequence-2-utopian-sky">Sequence 2: Utopian Sky</h2>
+<p><mark class="hl-mob">Fatebreaker</mark> recenters, faces north, and begins casting <mark class="hl-cast">Utopian Sky</mark>,
+once again is surrounded by <mark class="hl-fire">fire</mark> or <mark class="hl-elec">lightning</mark>.
+As before, this signals the upcoming <mark class="hl-fire">spread</mark> or <mark class="hl-elec">stack</mark>,
+and you can also tell them apart by the audio cue.</p>
+<p>Once the cast completes, <mark class="hl-mob">Fatebreaker</mark> goes untargetable and disappears,
+and the arena is be covered in a deep fog.
+If you’ve played 
+<abbr title="Eden's Promise: Anamorphosis (Savage)">E11S</abbr>,
+you will recognize this from <mark class="hl-cast">Prismatic Deception</mark>.
+Eight <mark class="hl-mob">Fatebreaker</mark> clones—<mark class="hl-mob">Fatebreaker&#x27;s Image</mark>—will
+appear just outside the arena, one in each 
+<abbr title="Cardinal or intercardinal">principal direction</abbr>.
+Due to the fog, they can only be seen if you are nearby.
+Right after they appear, the <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Powder Mark Trail</div>
+            <div class='buff-description'> Emblazoned with a gunpowder mark that will cause you and the nearest ally to explode when this effect expires. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Both players are hit by large AoE tankbusters. The explosions will go off immediately if the bearer dies.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/214000/214234.png" loading="lazy" />
+    </span>
+</span> from earlier will expire,
+causing large 
+<abbr title="Area of Effect">AoE</abbr> tankbusters to hit both the player originally hit by
+<mark class="hl-cast">Powder Mark Trail</mark> and the player nearest to them.</p>
+<p>Three of the clones will raise their gunblades to point straight up and begin casting
+<mark class="hl-cast">Blasting Zone</mark>,
+while the rest will keep theirs facing downwards and at an angle before disappearing.
+<mark class="hl-mob">Fatebreaker</mark> reappears just before the casts complete, and begins charging a new
+<mark class="hl-cast">Cyclonic Break</mark>. The <mark class="hl-fire">fire</mark> or <mark class="hl-elec">lightning</mark> element need not be the same as before.</p>
+<p>When the <mark class="hl-cast">Blasting Zone</mark> completes,
+the three clones will cleave in front of them in a line.
+At the same time, players will be hit by an attack depending on the element
+charged during the <mark class="hl-cast">Utopian Sky</mark> cast:</p>
+<ul>
+<li><mark class="hl-fire">Sinbound Fire III</mark>, an 
+<abbr title="A shared-damage stack meant for a light party, i.e. 4 players">LP stack</abbr> AoE.</li>
+<li><mark class="hl-elec">Sinbound Thunder III</mark>, a spread AoE.</li>
+</ul>
+<p>When <mark class="hl-mob">Fatebreaker</mark> finishes casting,
+the second <mark class="hl-cast">Cyclonic Break</mark> is exactly the same as the first,
+except that the element is random and may be different from before.</p>
+<h3 id="turn-of-the-heavens">Turn of the Heavens</h3>
+<p>During the execution of <mark class="hl-cast">Cyclonic Break</mark>, two more clones will appear:
+one just north of <mark class="hl-mob">Fatebreaker</mark>, and one at the west side of the arena.
+The one next to <mark class="hl-mob">Fatebreaker</mark> casts <mark class="hl-cast">Turn of the Heavens</mark>
+with either <mark class="hl-fire">fire</mark> or <mark class="hl-elec">lightning</mark>,
+while the one on the edge will cast <mark class="hl-elec">Burnt Strike</mark>.
+The audio cue indicates <mark class="hl-mob">Fatebreaker</mark>’s element.</p>
+<p>As the cast completes:</p>
+<ul>
+<li>Four <mark class="hl-fire">Halo of Flame</mark> and four <mark class="hl-elec">Halo of Levin</mark> appear
+near the outside of the arena at cardinals and intercardinals. They are always positioned with
+<mark class="hl-fire">Flame</mark> halos on the west or east side, and <mark class="hl-elec">Levin</mark> halos on the other.
+The halos begin casting <mark class="hl-cast">Brightfire</mark>.</li>
+<li>Two clones appear at random intercardinals, tethered to two random players,
+and begin casting <mark class="hl-fire">Bound of Faith</mark>.
+The tethered players also receive <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-description'> Marked as prey. </div>
+                <hr>
+            <div class='buff-explanation'> <p>You are tethered and will be hit by a mechanic from the tethered boss/clone.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015026.png" loading="lazy" />
+    </span>
+        <span class="buff-name">Prey</span>
+</span> and <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Fated Burn Mark<span class='buff-params'> (for 15s)</span></div>
+            <div class='buff-description'> Emblazoned with a fateful burn mark that will cause you to explode with a vengeance when you are KO'd. </div>
+                <hr>
+            <div class='buff-explanation'> <p>If you die before the debuff falls off, it’s a heavy raidwide with a Damge Down, but not an automatic wipe.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/214000/214233.png" loading="lazy" />
+            <span class="buff-duration">15</span>
+    </span>
+        <span class="buff-name">Fated Burn Mark</span>
+</span>.</li>
+<li>One more clone appears at the north end of the arena,
+casting <mark class="hl-fire">Burnt Strike</mark>.</li>
+</ul>
+<p>After the new adds begin casting, the first <mark class="hl-cast">Burnt Strike</mark> goes off,
+cleaving in a line from west to east.
+The cleave repeats immediately, but is substantially wider the second time.
+A few seconds later, the second <mark class="hl-cast">Burnt Strike</mark> goes off, cleaving from north to south.
+The follow-up strike will hit all players with a knockback east or west, away from the center.
+These knockbacks cannot be resisted.</p>
+<p>Shortly afterwards, all the halos explode, dealing lethal damage in a circle.
+The halos that do not match the element of the <mark class="hl-cast">Turn of the Heavens</mark> cast only explode
+directly underneath themselves.
+The halos that do match will explode inside the larger circle denoted on the floor.</p>
+<p>At the same time, the two tethered players are lifted into the air with
+<span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Floating Fetters<span class='buff-params'> (for 3s)</span></div>
+            <div class='buff-description'> Bound in midair and unable to move. </div>
+                <hr>
+            <div class='buff-explanation'> <p>You can still take actions.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015301.png" loading="lazy" />
+            <span class="buff-duration">3</span>
+    </span>
+        <span class="buff-name">Floating Fetters</span>
+</span>, then charged by the adds and hit with <mark class="hl-fire">Sinsmoke</mark>.
+Unlike earlier, this <mark class="hl-fire">Sinsmoke</mark> is an 
+<abbr title="A shared-damage stack meant for a light party, i.e. 4 players">LP stack</abbr> that inflicts
+<span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Mark of Mortality<span class='buff-params'> (for 2m)</span></div>
+            <div class='buff-description'> Branded with a mark of mortality. Damage dealt is reduced. Too many stacks will result in KO. </div>
+                <hr>
+            <div class='buff-explanation'> <p>This is a 90% damage down, which stacks with a regular Damage Down to produce a 99% damage down.
+Two or more stacks is instantly lethal.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/219000/219421.png" loading="lazy" />
+            <span class="buff-duration">2m</span>
+    </span>
+        <span class="buff-name">Mark of Mortality</span>
+</span> if it hits fewer than 4 players.
+If the tethered player died, a random player will be targeted instead.</p>
+<h3 id="burnished-glory">Burnished Glory</h3>
+<p><mark class="hl-mob">Fatebreaker</mark> reappears shortly after <mark class="hl-fire">Sinsmoke</mark>,
+and is immediately targetable.
+The sequence wraps up with <mark class="hl-cast">Burnished Glory</mark>,
+a raidwide that inflicts a heavy <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Bleeding<span class='buff-params'> (for 15s)</span></div>
+            <div class='buff-description'> Sustaining damage over time. </div>
+                <hr>
+            <div class='buff-explanation'> <p>This is a very strong bleed from the raidwide.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015530.png" loading="lazy" />
+            <span class="buff-duration">15</span>
+    </span>
+        <span class="buff-name">Bleeding</span>
+</span>.</p>
+<h2 id="sequence-3-fall-of-faith">Sequence 3: Fall of Faith</h2>
+<p>The third sequence begins with a <mark class="hl-cast">Fall of Faith</mark> cast.
+<mark class="hl-mob">Fatebreaker</mark> will glow with <mark class="hl-fire">fire</mark> or <mark class="hl-elec">lightning</mark> energy,
+and mark a player with a tether and <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-description'> Marked as prey. </div>
+                <hr>
+            <div class='buff-explanation'> <p>You are tethered and will be hit by a mechanic from the tethered boss/clone.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015026.png" loading="lazy" />
+    </span>
+        <span class="buff-name">Prey</span>
+</span>.
+The tether will glow <mark class="hl-fire">red</mark> or <mark class="hl-elec">blue</mark> depending on the element being charged.</p>
+<p>Over the course of the cast, three clones will appear at the NW, N, and NE edges of the arena,
+in that order.
+Each will begin casting its own <mark class="hl-cast">Fall of Faith</mark> with its own tether and
+<span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Prey</div>
+            <div class='buff-description'> Marked as prey. </div>
+                <hr>
+            <div class='buff-explanation'> <p>You are tethered and will be hit by a mechanic from the tethered boss/clone.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015026.png" loading="lazy" />
+    </span>
+</span>, for a total of four on four different targets.</p>
+<p>When the casts complete, similar to the end of the previous sequence,
+the boss or clone will lift their target into the air with <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Floating Fetters<span class='buff-params'> (for 3s)</span></div>
+            <div class='buff-description'> Bound in midair and unable to move. </div>
+                <hr>
+            <div class='buff-explanation'> <p>You can still take actions.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015301.png" loading="lazy" />
+            <span class="buff-duration">3</span>
+    </span>
+        <span class="buff-name">Floating Fetters</span>
+</span> and charge
+at them.
+The attack is either <mark class="hl-fire">Sinblaze</mark> or <mark class="hl-elec">Sinsmite</mark>,
+depending on the element, but with completely new mechanics:</p>
+<ul>
+<li><mark class="hl-fire">Sinblaze</mark> hits the targeted player as well as producing a 90° cone originating from
+the target, aimed towards the nearest player.
+The entire attack is an 
+<abbr title="A shared-damage stack meant for a light party, i.e. 4 players">LP stack</abbr>
+so to satisfy the stack, there must be at least three players inside the cone,
+plus the main target.
+If there are fewer than four players total hit by the attack,
+it will inflict <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Mark of Mortality<span class='buff-params'> (for 2m)</span></div>
+            <div class='buff-description'> Branded with a mark of mortality. Damage dealt is reduced. Too many stacks will result in KO. </div>
+                <hr>
+            <div class='buff-explanation'> <p>This is a 90% damage down, which stacks with a regular Damage Down to produce a 99% damage down.
+Two or more stacks is instantly lethal.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/219000/219421.png" loading="lazy" />
+            <span class="buff-duration">2m</span>
+    </span>
+        <span class="buff-name">Mark of Mortality</span>
+</span>.</li>
+<li><mark class="hl-elec">Sinsmite</mark> hits the targeted player
+and produces three 120° cones originating from them, aimed towards the three nearest players.
+Because these are so wide, positioning is critical.</li>
+</ul>
+<p>Both <mark class="hl-fire">Sinblaze</mark> and <mark class="hl-elec">Sinsmite</mark> inflict <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Magic Vulnerability Up<span class='buff-params'> (for 4s)</span></div>
+            <div class='buff-description'> Magic damage taken is increased. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Magic damage is lethal.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015057.png" loading="lazy" />
+            <span class="buff-duration">4</span>
+    </span>
+        <span class="buff-name">Magic Vulnerability Up</span>
+</span>,
+which lasts until after the next attack in the sequence.
+Thus, a player hit by two consecutive attacks will die.</p>
+<p><mark class="hl-mob">Fatebreaker</mark> completes the sequence with another <mark class="hl-cast">Burnished Glory</mark>
+and another <mark class="hl-cast">Powder Mark Trail</mark>.
+Note that the 
+<abbr title="Damage over Time">DoT</abbr> from the <mark class="hl-cast">Burnished Glory</mark> will make the tankbuster
+require more mitigation/healing than the first time.</p>
+<h2 id="sequence-4-burnt-strike">Sequence 4: Burnt Strike</h2>
+<p><mark class="hl-mob">Fatebreaker</mark> casts <mark class="hl-cast">Burnt Strike</mark>, glowing with <mark class="hl-fire">fire</mark> or <mark class="hl-elec">lightning</mark>.
+As he does so, three towers appear along the east or west edge of the arena.
+The total number of players required for the towers is always 6,
+but the distribution is random: it could be 1/1/4, 1/2/3, or 2/2/2 in any order.</p>
+<p>The <mark class="hl-cast">Burnt Strike</mark> is a north-south line cleave, followed by:</p>
+<ul>
+<li>For <mark class="hl-fire">fire</mark>, all players are knocked back east or west away from the center.</li>
+<li>For <mark class="hl-elec">lightning</mark>, a second, wider line cleave.</li>
+</ul>
+<p>Right after the follow-up attack, the towers will go off and, at the same time,
+the <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-description'> Emblazoned with a gunpowder mark that will cause you and the nearest ally to explode when this effect expires. </div>
+                <hr>
+            <div class='buff-explanation'> <p>Both players are hit by large AoE tankbusters. The explosions will go off immediately if the bearer dies.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/214000/214234.png" loading="lazy" />
+    </span>
+        <span class="buff-name">Powder Mark Trail</span>
+</span> detonates on its target and the newest player
+If a tower is missed, it explodes in a heavy raidwide
+with <span class="buff" >
+    <span class="buff-icon"
+      data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-custom-class="blockdiv"
+      data-bs-title="
+            <div class='buff-name'>Damage Down<span class='buff-params'> (for 2m)</span></div>
+            <div class='buff-description'> Damage dealt is reduced. </div>
+                <hr>
+            <div class='buff-explanation'> <p>This is a 90% damage reduction.</p>
+ </div>
+    ">
+        <img src="https://xivapi.com/i/015000/015520.png" loading="lazy" />
+            <span class="buff-duration">2m</span>
+    </span>
+</span>.</p>
+<h2 id="enrage">Enrage</h2>
+<p><mark class="hl-mob">Fatebreaker</mark> now casts <mark class="hl-cast">Burnished Glory</mark> for a third and final time,
+with a long castbar.
+If the cast succeeds, the party wipes.
+To proceed to the next phase, <mark class="hl-mob">Fatebreaker</mark> must be killed before the cast completes.</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>Thanks to various players in the NAUR discord for answering my questions and running tests,
+particularly <mark class="hl-mob">Cia</mark>, <mark class="hl-mob">Bonafide Bovine</mark>, <mark class="hl-mob">Unit</mark>, <mark class="hl-mob">HopeP</mark>,
+and <mark class="hl-mob">Ewaen Enjinia</mark>.
+Thanks also to everyone who has progged this fight early and uploaded PoVs for my reference.</p>
+
+      <nav>
+        <div>
+        </div>
+        <div>
+          <a href="https://dynamis.gg/fru/p2/"> Phase 2: Usurper of Frost &#8250;</a>
+        </div>
+      </nav>
+    </article>
+
+    <div class="sblock"><div class="blockdiv sectoc index">
+        <div class="index-head"><a href="https://dynamis.gg/fru/">Futures Rewritten</a></div>
+          <ol>
+            <li>
+              <a class="scur" href="https://dynamis.gg/fru/p1/">Phase 1: Fatebreaker</a><br>
+            </li>
+            <li>
+              <a href="https://dynamis.gg/fru/p2/">Phase 2: Usurper of Frost</a><br>
+            </li>
+            <li>
+              <a href="https://dynamis.gg/fru/i1/">Intermission: Crystals</a><br>
+            </li>
+            <li>
+              <a href="https://dynamis.gg/fru/p3/">Phase 3: Oracle of Darkness</a><br>
+            </li>
+            <li>
+              <a href="https://dynamis.gg/fru/p4/">Phase 4: Roommates</a><br>
+            </li>
+            <li>
+              <a href="https://dynamis.gg/fru/p5/">Phase 5: Pandora</a><br>
+            </li>
+            <li>
+              <a href="https://dynamis.gg/fru/buffs/">Appendix: Buffs</a><br>
+            </li>
+            <li>
+              <a href="https://dynamis.gg/fru/plans/">Appendix: Future Plans</a><br>
+            </li></ol>
+      </hr>
+      </div>
+      <div class="blockdiv sticky toc index">
+        <div class="index-head"><a href="#">Fatebreaker</a></div>
+        <ol>
+        <li>
+          <a href="#sequence-1-cyclonic-break">Sequence 1: Cyclonic Break</a>
+        </li>
+        <ol>
+        <li>
+          <a href="#powder-mark-trail">Powder Mark Trail</a>
+        </li></ol>
+        <li>
+          <a href="#sequence-2-utopian-sky">Sequence 2: Utopian Sky</a>
+        </li>
+        <ol>
+        <li>
+          <a href="#turn-of-the-heavens">Turn of the Heavens</a>
+        </li>
+        <li>
+          <a href="#burnished-glory">Burnished Glory</a>
+        </li></ol>
+        <li>
+          <a href="#sequence-3-fall-of-faith">Sequence 3: Fall of Faith</a>
+        </li>
+        <li>
+          <a href="#sequence-4-burnt-strike">Sequence 4: Burnt Strike</a>
+        </li>
+        <li>
+          <a href="#enrage">Enrage</a>
+        </li>
+        <li>
+          <a href="#acknowledgments">Acknowledgments</a>
+        </li></ol>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="c">
+      <nav class="tpad"><div><a class="js m-protected" href="#c3BlY3RyaWEubGltaW5hQGdtYWlsLmNvbQ==" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a><a href="https://github.com/spectria-limina&#x2F;dynamis-gg/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dynamis.gg/about/"> About </a>
+        <a class="rpad s90" href="https://dynamis.gg/sitemap.xml" target="_blank"> Sitemap.xml </a>
+      </nav>
+          
+      <p class="s80"> © <span id="year">2025</span> Tvnariea Reksane<br>Final Fantasy XIV assets are © Square Enix and used under license</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="-20 -20 40 40"
+    height="1440px" width="1440px"
+    id="#burnt-strike"
+    class="strat" >
+    <link
+        xmlns="http://www.w3.org/1999/xhtml"
+        rel="stylesheet"
+        href="/fru/p1/burnt-strike.css"
+        type="text/css" />
+
+    <defs>
+        <filter id="pld-icon">
+            <feImage class="player-icon" href="/icons/jobs/pld.png" />
+        </filter>
+        <filter id="war-icon">
+            <feImage class="player-icon" href="/icons/jobs/war.png" />
+        </filter>
+        <filter id="drk-icon">
+            <feImage class="player-icon" href="/icons/jobs/drk.png" />
+        </filter>
+        <filter id="gnb-icon">
+            <feImage class="player-icon" href="/icons/jobs/gnb.png" />
+        </filter>
+        <filter id="whm-icon">
+            <feImage class="player-icon" href="/icons/jobs/whm.png" />
+        </filter>
+        <filter id="sch-icon">
+            <feImage class="player-icon" href="/icons/jobs/sch.png" />
+        </filter>
+        <filter id="ast-icon">
+            <feImage class="player-icon" href="/icons/jobs/ast.png" />
+        </filter>
+        <filter id="sge-icon">
+            <feImage class="player-icon" href="/icons/jobs/sge.png" />
+        </filter>
+        <filter id="mnk-icon">
+            <feImage class="player-icon" href="/icons/jobs/mnk.png" />
+        </filter>
+        <filter id="drg-icon">
+            <feImage class="player-icon" href="/icons/jobs/drg.png" />
+        </filter>
+        <filter id="nin-icon">
+            <feImage class="player-icon" href="/icons/jobs/nin.png" />
+        </filter>
+        <filter id="sam-icon">
+            <feImage class="player-icon" href="/icons/jobs/sam.png" />
+        </filter>
+        <filter id="rpr-icon">
+            <feImage class="player-icon" href="/icons/jobs/rpr.png" />
+        </filter>
+        <filter id="vpr-icon">
+            <feImage class="player-icon" href="/icons/jobs/vpr.png" />
+        </filter>
+        <filter id="brd-icon">
+            <feImage class="player-icon" href="/icons/jobs/brd.png" />
+        </filter>
+        <filter id="mch-icon">
+            <feImage class="player-icon" href="/icons/jobs/mch.png" />
+        </filter>
+        <filter id="dnc-icon">
+            <feImage class="player-icon" href="/icons/jobs/dnc.png" />
+        </filter>
+        <filter id="blm-icon">
+            <feImage class="player-icon" href="/icons/jobs/blm.png" />
+        </filter>
+        <filter id="smn-icon">
+            <feImage class="player-icon" href="/icons/jobs/smn.png" />
+        </filter>
+        <filter id="rdm-icon">
+            <feImage class="player-icon" href="/icons/jobs/rdm.png" />
+        </filter>
+        <filter id="pct-icon">
+            <feImage class="player-icon" href="/icons/jobs/pct.png" />
+        </filter>
+    </defs>
+
+    <rect class="svg-background arena-size" />
+    <mask id="arena-mask">
+        <circle class="arena-size" fill="white" stroke="none" />
+    </mask>
+    <image
+        id="arena"
+        class="arena-size"
+        mask="url(#arena-mask)" 
+        href="/fru/arenas/fatebreaker.png" />
+
+    <image
+        id="boss"
+        href="/icons/boss.svg" />
+
+    <g id="players">
+        <rect id="mt" class="player-icon" filter="url(#pld-icon)" />
+        <rect id="ot" class="player-icon" filter="url(#drk-icon)" />
+        <rect id="h1" class="player-icon" filter="url(#ast-icon)" />
+        <rect id="h2" class="player-icon" filter="url(#sch-icon)" />
+        <rect id="m1" class="player-icon" filter="url(#nin-icon)" />
+        <rect id="m2" class="player-icon" filter="url(#vpr-icon)" />
+        <rect id="r1" class="player-icon" filter="url(#brd-icon)" />
+        <rect id="r2" class="player-icon" filter="url(#pct-icon)" />
+    </g>
+</svg>
